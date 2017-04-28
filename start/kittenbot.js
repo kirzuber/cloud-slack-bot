@@ -52,6 +52,11 @@ controller.hears(
     ['hru', 'how are you', 'how are you?'], ['direct_message', 'direct_mention', 'mention'],
     function (bot, message) { bot.reply(message, 'Great! Meow!. :joy_cat:') })
 
+controller.hears(
+    ['cold', 'warm'], ['direct_message', 'direct_mention', 'mention'],
+    function (bot, message) { bot.reply(message, 'Hey, do not ask such questions!. :tiger:') })
+
+
   // START: listen for cat emoji delivery
 var maxCats = 20
 var catEmojis = [
