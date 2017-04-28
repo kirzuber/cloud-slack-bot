@@ -18,6 +18,7 @@ This is a sample Slack bot built with Botkit.
 */
 
 var Botkit = require('botkit')
+var fs = require('fs') // NEW: Add this require (for loading from files).
 
 var controller = Botkit.slackbot({debug: false})
 
